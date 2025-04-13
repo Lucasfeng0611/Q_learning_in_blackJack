@@ -29,7 +29,7 @@ def train(num_episodes=8000000):
                 episode_reward = reward  # 保存最终结果
 
         # 统计结果
-        if episode_reward > 0:
+        if episode_reward > 0.25:
             wins += 1
         elif episode_reward < 0 :
             losses += 1

@@ -61,7 +61,7 @@ class BlackjackGame:
                 state, reward, done = self.env.step(action)
                 if done:
                     # 根据结果生成文本
-                    if reward > 0:
+                    if reward > 0.25:
                         self.result_text = self.font.render("Player Win!", True, self.colors['WHITE'])
                     elif reward < 0:
                         self.result_text = self.font.render("Dealer win!", True, self.colors['WHITE'])
